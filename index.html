@@ -299,10 +299,11 @@
 							}	
 						},
 						nop: function(path) {
-				
-							if ($('.sj-book').turn('is'))
-								$('.sj-book').turn('page', 1);
-						}
+
+                            if ($('.sj-book').turn('is')) {
+                                $('.sj-book').turn('page', 2);
+                            }
+                        }
 					});
 				
 					// Arrows
@@ -323,8 +324,15 @@
 					// Flipbook				
 				
 					flipbook.bind(($.isTouch) ? 'touchend' : 'click', zoomHandle);
-				
-					flipbook.turn({
+
+                    flipbook.bind("turning", function (event, page, pageObject)
+                    {
+                        if (page == 1) {
+                            event.preventDefault();
+                        }
+                    });
+
+                    flipbook.turn({
 						elevation: 50,
 						acceleration: !isChrome(),
 						autoCenter: true,
@@ -337,7 +345,7 @@
 								var book = $(this),
 									currentPage = book.turn('page'),
 									pages = book.turn('pages');
-				
+
 								if (currentPage>3 && currentPage<pages-3) {
 								
 									if (page==1) {
@@ -387,22 +395,22 @@
 								$('#slider').slider('value', getViewNumber(book, page));
 								book.turn('center');
 							},
-				
-							start: function(e, pageObj) {		
+
+							start: function(e, pageObj) {
 								moveBar(true);
 							},
-				
-							end: function(e, pageObj) {			
+
+							end: function(e, pageObj) {
 								var book = $(this);
 								updateDepth(book);
 								setTimeout(function() {
-									
+
 									$('#slider').slider('value', getViewNumber(book));
 								}, 1);
 								moveBar(false);
 							},
-				
-							missing: function (e, pages) {
+
+                            missing: function (e, pages) {
 								for (var i = 0; i < pages.length; i++) {
 									addPage(pages[i], $(this));
 								}
