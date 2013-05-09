@@ -1,0 +1,54 @@
+.megamenu {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	margin-left: 0;
+	border: 1px dotted #b2b2b2;
+	background: white;
+/* 	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+	behavior: url("PIE.htc"); */
+	padding: 10px;
+	z-index: 100;
+}
+
+.megamenu .column {
+	float: left;
+	width: 220px; /*width of each menu column*/
+	margin-right: 5px;
+}
+
+.megamenu .column ul {
+	margin: 0;
+	padding: 0 0 10px 7px;
+	list-style-type: none;
+}
+
+.megamenu .column ul li {
+	padding: 0 0 2px 9px;
+	padding-bottom: 1px;
+	background: url("../img/arrowLnk.png") 0 11px no-repeat;	
+}
+
+.megamenu .column h4 {
+	background: #eee;
+	margin: 0 0 5px 0;
+	padding: 3px 3px 3px 7px;
+/* 	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+	behavior: url("PIE.htc"); */
+}
+
+.megamenu .column ul li a {
+	border-top: 1px solid transparent;
+	font: normal 15px/30px 'myriad-pro', Arial, sans-serif;
+	text-decoration: none;
+}
+
+.megamenu .column ul li a:hover {
+	border-top: 1px solid #61b946;
+	border-bottom: 1px solid #61b946;
+}
