@@ -52,10 +52,14 @@ img {
 }
 hr {
 	height: 1px;
-	border: none 0; 
-	border-top: 1px dotted #fbee95;
 	margin: 10px 0;
+	border: none 0; 
+	border-top: 1px dotted #fbee95;	
 }
+	#ftr-content hr {
+		margin: 20px 0;
+		border-top: 1px solid #666;
+	}
 
 /*::::::::::::::: TEXT STYLES :::::::::::::::*/
 
@@ -141,6 +145,10 @@ h5 {
 }
 .caps {
 	text-transform: uppercase;
+}
+
+.twitter-share-button {
+	float: right;
 }
 
 /*::::::::::::::: MISC POSITION PROPERTIES :::::::::::::::*/

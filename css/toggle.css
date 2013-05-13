@@ -1,0 +1,71 @@
+/* Simple Toggle with CSS &amp; jQuery by Soh Tanaka: http://www.sohtanaka.com/web-design/easy-toggle-jquery-tutorial/ */
+
+
+html {
+	overflow-Y: scroll;
+}
+
+*, * focus {
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+#toggle {
+	width: 713px;
+}
+
+div.trigger {
+	padding: 0;	margin: 0 0 5px 0;
+	background: url("../img/arrw_off.png") 10px 11px no-repeat;
+	height: 31px;
+	width: 713px;
+	font: normal 14px;
+	float: left;
+	cursor: pointer;
+}
+	div.trigger a {
+		display: block;
+		height: 25px;
+		width: 688px;
+		padding: 6px 0 0 25px;
+		text-decoration: none;
+	}
+	div.trigger a:hover {
+		background: url("../img/arrw_over.png") 10px 11px no-repeat #990500;
+		color: #fff;
+	}
+div.active {
+	background: url("../img/arrw_on.png") 10px 11px no-repeat #990500;
+}
+	div.active a {
+		color: #fff;
+		text-decoration: none;
+	}
+.toggle_container {
+	margin: 0; padding: 0;
+	overflow: hidden;
+	width: 713px;
+	clear: both;
+}
+	.block {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	.block h2 {
+		padding-top: 10px;
+	}
+	.block p {
+		padding: 10px 0;
+	}
+	.block a {
+		font-weight: normal;
+	}
+	
+p.close {
+	curser: pointer;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: right;
+}

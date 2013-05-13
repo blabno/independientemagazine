@@ -45,7 +45,6 @@
 	jkmegamenu.definemenu("megaanchor3", "megamenu3", "mouseover")
 	jkmegamenu.definemenu("megaanchor4", "megamenu4", "mouseover")
 	jkmegamenu.definemenu("megaanchor5", "megamenu5", "mouseover")
-	jkmegamenu.definemenu("megaanchor6", "megamenu6", "mouseover")
 	
 	</script>
 	
@@ -65,7 +64,7 @@
 
 <noscript>For optimal site interaction, please turn javascript on in your browser. For Firefox, go to Tools &rsaquo; Options &rsaquo; Content. For Internet Explorer, go to Tools &rsaquo; Internet Options &rsaquo; Security &rsaquo; Internet &rsaquo; Custom Level &rsaquo; Enable Active Scripting.<br>Otherwise, please visit our <a href="#sitemap">sitemap</a> for easier navigation.</noscript>
 
-<div id="wrapper-ht">
+<div id="wrapper-ht-mp">
 	<div id="header-wrap">	
 		<div id="header"> <!-- begin header -->
 			
@@ -120,25 +119,9 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="#" id="megaanchor3">Testimonios</a>
+						<li><a href="comparte-tu-testimonio.html">Testimonios</a></li>
+						<li><a href="#" id="megaanchor3">Adicciones</a>
 							<div id="megamenu3" class="megamenu">
-								<div class="column">
-									<ul>
-										<li><a href="testimonios.html">Comparte Tu Testimonio</a></li>
-										<li><a href="testimonios-oscar-de-la-hoya.html">Oscar De La Hoya</a></li>
-										<li><a href="testimonios-jose-jose.html">Jose Jose</a></li>
-										<li><a href="testimonios-charlie-zaa.html">Charlie Zaa</a></li>
-										<li><a href="testimonios-charlie-lopez.html">Charlie Lopez</a></li>
-										<li><a href="testimonios-eduardo-santamarina.html">Eduardo Santamarina</a></li>
-										<li><a href="testimonios-algueda-alvarado.html">Algueda Alvarado</a></li>
-										<li><a href="testimonios-nelly-herrera.html">Nelly Herrera</a></li>
-										<li><a href="testimonios-gladys-munos.html">Gladys Munos</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="#" id="megaanchor4">Adicciones</a>
-							<div id="megamenu4" class="megamenu">
 								<div class="column">
 									<ul>
 										<li><a href="adicc-consejos.html">Consejos</a></li>
@@ -149,8 +132,8 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="#" id="megaanchor5">Recuper&#225;ndome</a>
-							<div id="megamenu5" class="megamenu">
+						<li><a href="#" id="megaanchor4">Recuper&#225;ndome</a>
+							<div id="megamenu4" class="megamenu">
 								<div class="column">
 									<ul>
 										<li><a href="recup-12-pasos.html">12 Pasos</a></li>
@@ -163,8 +146,8 @@
 							</div>
 						</li>
 						<li><a href="distribucion.html">Distribuci&#243;n</a></li>
-						<li><a href="#" id="megaanchor6">Patrocinadores</a>
-							<div id="megamenu6" class="megamenu">
+						<li><a href="#" id="megaanchor5">Patrocinadores</a>
+							<div id="megamenu5" class="megamenu">
 								<div class="column">
 									<ul>
 										<li><a href="patrocinadores-anuncia-tu-negocio.html">Anuncia tu Negocio</a></li>
@@ -190,265 +173,294 @@
 		
 	</div> <!-- end header-wrap -->	
 	
-	<div id="content">
-		<div id="turnBx">
-			<div id="canvas">
-				<div id="book-zoom">
-					<div class="sj-book">
-						<div depth="5" class="hard"> <div class="side"></div> </div>
-						<div depth="5" class="hard front-side"> <div class="depth"></div> </div>
-						<div class="own-size"></div>
-						<!-- <div class="own-size even"></div> -->
-						<div class="hard fixed back-side p25"> <div class="depth"></div> </div>
-						<div class="hard p26"></div>
-					</div>
-				</div>
-				<div id="slider-bar" class="turnjs-slider">
-					<div id="slider"></div>
-				</div>
-			</div>	
-	
-			<script type="text/javascript">
+	<div id="contentWrap">
+		<div id="content">
+		
+			<div id="socialShare">
+				<div class="fb-like left spcr-r" data-href="https://www.facebook.com/serbestia" data-send="true" data-layout="button_count" data-width="128" data-show-faces="false" data-font="arial"></div>
+				
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.independientemagazine.com/" data-via="Serbestia">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+				<div class="clr"></div>
+			</div>
 			
-				function loadApp() {
-					
-					var flipbook = $('.sj-book');
+			<div id="turnBx">
+				<div id="canvas">
+					<div id="book-zoom">
+						<div class="sj-book">
+							<div depth="5" class="hard"> <div class="side"></div> </div>
+							<div depth="5" class="hard front-side"> <div class="depth"></div> </div>
+							<div class="own-size"></div>
+							<!-- <div class="own-size even"></div> -->
+							<div class="hard fixed back-side p25"> <div class="depth"></div> </div>
+							<div class="hard p26"></div>
+						</div>
+					</div>
+					<div id="slider-bar" class="turnjs-slider">
+						<div id="slider"></div>
+					</div>
+				</div>	
+		
+				<script type="text/javascript">
 				
-					// Check if the CSS was already loaded
-					
-					if (flipbook.width()==0 || flipbook.height()==0) {
-						setTimeout(loadApp, 10);
-						return;
-					}
-				
-					// Mousewheel
-				
-					$('#book-zoom').mousewheel(function(event, delta, deltaX, deltaY) {
-				
-						var data = $(this).data(),
-							step = 30,
-							flipbook = $('.sj-book'),
-							actualPos = $('#slider').slider('value')*step;
-				
-						if (typeof(data.scrollX)==='undefined') {
-							data.scrollX = actualPos;
-							data.scrollPage = flipbook.turn('page');
-						}
-				
-						data.scrollX = Math.min($( "#slider" ).slider('option', 'max')*step,
-							Math.max(0, data.scrollX + deltaX));
-				
-						var actualView = Math.round(data.scrollX/step),
-							page = Math.min(flipbook.turn('pages'), Math.max(1, actualView*2 - 2));
-				
-						if ($.inArray(data.scrollPage, flipbook.turn('view', page))==-1) {
-							data.scrollPage = page;
-							flipbook.turn('page', page);
-						}
-				
-						if (data.scrollTimer)
-							clearInterval(data.scrollTimer);
+					function loadApp() {
 						
-						data.scrollTimer = setTimeout(function(){
-							data.scrollX = undefined;
-							data.scrollPage = undefined;
-							data.scrollTimer = undefined;
-						}, 1000);	
-					});
-				
-					// Slider
-				
-					$( "#slider" ).slider({
-						min: 1,
-						max: 100,
-				
-						start: function(event, ui) {
-				
-							if (!window._thumbPreview) {
-								_thumbPreview = $('<div />', {'class': 'thumbnail'}).html('<div></div>');
-								setPreview(ui.value);
-								_thumbPreview.appendTo($(ui.handle));
-							} else
-								setPreview(ui.value);	
-							moveBar(false);	
-						},
-				
-						slide: function(event, ui) {	
-							setPreview(ui.value);	
-						},
-				
-						stop: function() {	
-							if (window._thumbPreview)
-								_thumbPreview.removeClass('show');
-							
-							$('.sj-book').turn('page', Math.max(1, $(this).slider('value')*2 - 2));	
-						}
-					});
-				
-				
-					// URIs
+						var flipbook = $('.sj-book');
 					
-					Hash.on('^page\/([0-9]*)$', {
-						yep: function(path, parts) {
-				
-							var page = parts[1];
-				
-							if (page!==undefined) {
-								if ($('.sj-book').turn('is'))
-									$('.sj-book').turn('page', page);
+						// Check if the CSS was already loaded
+						
+						if (flipbook.width()==0 || flipbook.height()==0) {
+							setTimeout(loadApp, 10);
+							return;
+						}
+					
+						// Mousewheel
+					
+						$('#book-zoom').mousewheel(function(event, delta, deltaX, deltaY) {
+					
+							var data = $(this).data(),
+								step = 30,
+								flipbook = $('.sj-book'),
+								actualPos = $('#slider').slider('value')*step;
+					
+							if (typeof(data.scrollX)==='undefined') {
+								data.scrollX = actualPos;
+								data.scrollPage = flipbook.turn('page');
+							}
+					
+							data.scrollX = Math.min($( "#slider" ).slider('option', 'max')*step,
+								Math.max(0, data.scrollX + deltaX));
+					
+							var actualView = Math.round(data.scrollX/step),
+								page = Math.min(flipbook.turn('pages'), Math.max(1, actualView*2 - 2));
+					
+							if ($.inArray(data.scrollPage, flipbook.turn('view', page))==-1) {
+								data.scrollPage = page;
+								flipbook.turn('page', page);
+							}
+					
+							if (data.scrollTimer)
+								clearInterval(data.scrollTimer);
+							
+							data.scrollTimer = setTimeout(function(){
+								data.scrollX = undefined;
+								data.scrollPage = undefined;
+								data.scrollTimer = undefined;
+							}, 1000);	
+						});
+					
+						// Slider
+					
+						$( "#slider" ).slider({
+							min: 1,
+							max: 100,
+					
+							start: function(event, ui) {
+					
+								if (!window._thumbPreview) {
+									_thumbPreview = $('<div />', {'class': 'thumbnail'}).html('<div></div>');
+									setPreview(ui.value);
+									_thumbPreview.appendTo($(ui.handle));
+								} else
+									setPreview(ui.value);	
+								moveBar(false);	
+							},
+					
+							slide: function(event, ui) {	
+								setPreview(ui.value);	
+							},
+					
+							stop: function() {	
+								if (window._thumbPreview)
+									_thumbPreview.removeClass('show');
+								
+								$('.sj-book').turn('page', Math.max(1, $(this).slider('value')*2 - 2));	
+							}
+						});
+					
+					
+						// URIs
+						
+						Hash.on('^page\/([0-9]*)$', {
+							yep: function(path, parts) {
+					
+								var page = parts[1];
+					
+								if (page!==undefined) {
+									if ($('.sj-book').turn('is'))
+										$('.sj-book').turn('page', page);
+								}	
+							},
+							nop: function(path) {
+	
+	                            if ($('.sj-book').turn('is')) {
+	                                $('.sj-book').turn('page', 2);
+	                            }
+	                        }
+						});
+					
+						// Arrows
+					
+						$(document).keydown(function(e){	
+							var previous = 37, next = 39;
+					
+							switch (e.keyCode) {
+								case previous:	
+									$('.sj-book').turn('previous');	
+								break;
+								case next:					
+									$('.sj-book').turn('next');	
+								break;
 							}	
-						},
-						nop: function(path) {
-
-                            if ($('.sj-book').turn('is')) {
-                                $('.sj-book').turn('page', 2);
-                            }
-                        }
-					});
-				
-					// Arrows
-				
-					$(document).keydown(function(e){	
-						var previous = 37, next = 39;
-				
-						switch (e.keyCode) {
-							case previous:	
-								$('.sj-book').turn('previous');	
-							break;
-							case next:					
-								$('.sj-book').turn('next');	
-							break;
-						}	
-					});	
-				
-					// Flipbook				
-				
-					flipbook.bind(($.isTouch) ? 'touchend' : 'click', zoomHandle);
-
-                    flipbook.bind("turning", function (event, page, pageObject)
-                    {
-                        if (page == 1) {
-                            event.preventDefault();
-                        }
-                    });
-
-                    flipbook.turn({
-						elevation: 50,
-						acceleration: !isChrome(),
-						autoCenter: true,
-						gradients: true,
-						duration: 1000,
-						pages: 26,
-						when: {
-							turning: function(e, page, view) {
-								
-								var book = $(this),
-									currentPage = book.turn('page'),
-									pages = book.turn('pages');
-
-								if (currentPage>3 && currentPage<pages-3) {
-								
-									if (page==1) {
-										book.turn('page', 2).turn('stop').turn('page', page);
-										e.preventDefault();
-										return;
-									} else if (page==pages) {
-										book.turn('page', pages-1).turn('stop').turn('page', page);
-										e.preventDefault();
-										return;
+						});	
+					
+						// Flipbook				
+					
+						flipbook.bind(($.isTouch) ? 'touchend' : 'click', zoomHandle);
+	
+	                    flipbook.bind("turning", function (event, page, pageObject) {
+	                        if (page == 1) {
+	                            event.preventDefault();
+	                        }
+	                    });
+						
+						flipbook.bind("start", function (event, pageObject) {
+							if (pageObject.page == 2) {
+								event.preventDefault();
+							}
+						});
+	
+	                    flipbook.turn({
+							elevation: 50,
+							acceleration: !isChrome(),
+							autoCenter: true,
+							gradients: true,
+							duration: 1000,
+							pages: 26,
+							when: {
+								turning: function(e, page, view) {
+									
+									var book = $(this),
+										currentPage = book.turn('page'),
+										pages = book.turn('pages');
+	
+									if (currentPage>3 && currentPage<pages-3) {
+									
+										if (page==1) {
+											book.turn('page', 2).turn('stop').turn('page', page);
+											e.preventDefault();
+											return;
+										} else if (page==pages) {
+											book.turn('page', pages-1).turn('stop').turn('page', page);
+											e.preventDefault();
+											return;
+										}
+									} else if (page>3 && page<pages-3) {
+										if (currentPage==1) {
+											book.turn('page', 2).turn('stop').turn('page', page);
+											e.preventDefault();
+											return;
+										} else if (currentPage==pages) {
+											book.turn('page', pages-1).turn('stop').turn('page', page);
+											e.preventDefault();
+											return;
+										}
 									}
-								} else if (page>3 && page<pages-3) {
-									if (currentPage==1) {
-										book.turn('page', 2).turn('stop').turn('page', page);
-										e.preventDefault();
-										return;
-									} else if (currentPage==pages) {
-										book.turn('page', pages-1).turn('stop').turn('page', page);
-										e.preventDefault();
-										return;
+					
+									updateDepth(book, page);
+									
+									if (page>=2)
+										$('.sj-book .p2').addClass('fixed');
+									else
+										$('.sj-book .p2').removeClass('fixed');
+					
+									if (page<book.turn('pages'))
+										$('.sj-book .p25').addClass('fixed');
+									else
+										$('.sj-book .p25').removeClass('fixed');
+					
+									Hash.go('page/'+page).update();					
+								},
+					
+								turned: function(e, page, view) {
+									var book = $(this);
+					
+									if (page==2 || page==3) {
+										book.turn('peel', 'br');
 									}
-								}
-				
-								updateDepth(book, page);
-								
-								if (page>=2)
-									$('.sj-book .p2').addClass('fixed');
-								else
-									$('.sj-book .p2').removeClass('fixed');
-				
-								if (page<book.turn('pages'))
-									$('.sj-book .p25').addClass('fixed');
-								else
-									$('.sj-book .p25').removeClass('fixed');
-				
-								Hash.go('page/'+page).update();					
-							},
-				
-							turned: function(e, page, view) {
-								var book = $(this);
-				
-								if (page==2 || page==3) {
-									book.turn('peel', 'br');
-								}
-								updateDepth(book);
-								
-								$('#slider').slider('value', getViewNumber(book, page));
-								book.turn('center');
-							},
-
-							start: function(e, pageObj) {
-								moveBar(true);
-							},
-
-							end: function(e, pageObj) {
-								var book = $(this);
-								updateDepth(book);
-								setTimeout(function() {
-
-									$('#slider').slider('value', getViewNumber(book));
-								}, 1);
-								moveBar(false);
-							},
-
-                            missing: function (e, pages) {
-								for (var i = 0; i < pages.length; i++) {
-									addPage(pages[i], $(this));
+									updateDepth(book);
+									
+									$('#slider').slider('value', getViewNumber(book, page));
+									book.turn('center');
+								},
+	
+								start: function(e, pageObj) {
+									moveBar(true);
+								},
+	
+								end: function(e, pageObj) {
+									var book = $(this);
+									updateDepth(book);
+									setTimeout(function() {
+	
+										$('#slider').slider('value', getViewNumber(book));
+									}, 1);
+									moveBar(false);
+								},
+	
+	                            missing: function (e, pages) {
+									for (var i = 0; i < pages.length; i++) {
+										addPage(pages[i], $(this));
+									}
 								}
 							}
-						}
+						});
+					
+					
+						$('#slider').slider('option', 'max', numberOfViews(flipbook));
+						flipbook.addClass('animated');
+					
+						// Show canvas
+					
+						$('#canvas').css({visibility: ''});
+					}
+					
+					// Hide canvas
+					
+					$('#canvas').css({visibility: 'hidden'});
+					
+					// Load turn.js
+					
+					yepnope({
+						test : Modernizr.csstransforms,
+						yep: ['js/turn.min.js'],
+						nope: ['js/turn.html4.min.js', 'css/turn.js.css'],
+						both: ['js/turn.js', 'css/jquery.ui.css', 'css/turn.js.css'],
+						complete: loadApp
 					});
-				
-				
-					$('#slider').slider('option', 'max', numberOfViews(flipbook));
-					flipbook.addClass('animated');
-				
-					// Show canvas
-				
-					$('#canvas').css({visibility: ''});
-				}
-				
-				// Hide canvas
-				
-				$('#canvas').css({visibility: 'hidden'});
-				
-				// Load turn.js
-				
-				yepnope({
-					test : Modernizr.csstransforms,
-					yep: ['js/turn.min.js'],
-					nope: ['js/turn.html4.min.js', 'css/turn.js.css'],
-					both: ['js/turn.js', 'css/jquery.ui.css', 'css/turn.js.css'],
-					complete: loadApp
-				});
-				
-			</script>
-		</div>
-		
+					
+				</script>
+			</div>
+			
+			<div class="clr"></div>
+			
+		</div> <!-- end content -->
+	</div> <!-- end contentWrap -->
+	
+	<div class="push-mp"></div>
+</div><!-- end wrapper-ht-mp -->
+
+<a name="sitemap"></a>
+
+<div id="footer-mp">	
+	<div id="ftr-content">
+	
 		<div class="cBx3">
 			<img src="img/ph-artMoreno.jpg" width="73" height="88" alt="" class="left spcr-t spcr-r spcr-b2">
 			
-			<p>Independiente Magazine es una revista que te ayuda y orienta de coma salir de tu heridas, complejos y malos h&#225;bitos. La revista fue fundada por un individuo que por la mayor parte de su vida vivi&#243; atrapado por el alcohol.</p> 
-
+			<p><em>Independiente Magazine</em> es una revista que te ayuda y orienta de coma salir de tu heridas, complejos y malos h&#225;bitos. La revista fue fundada por un individuo que por la mayor parte de su vida vivi&#243; atrapado por el alcohol.</p> 
+	
 			<p>Cada edici&#243;n habla acerca de un paso de recuperaci&#243;n, pasos a paso, edici&#243;n por edici&#243;n. En la revista tambi&#233;n encontraras testimonios de nuestra gente, art&#0237;culos especiales sobre las adiciones y los mas importante lo que la palabra de Dios dice acerca de tu recuperaci&#243;n.</p>
 		</div>
 		
@@ -458,21 +470,12 @@
 			<img src="img/bookcover-vol3-sm.jpg" width="101" height="154" alt="">
 			<img src="img/bookcover-vol4-sm.jpg" width="101" height="154" alt="">
 			
-			<p class="spcr-t2">More Flipbooks coming soon!</p>
+			<p class="spcr-t2"><strong>More Flipbooks coming soon!</strong></p>
 		</div>
 		
-		<div class="clr"></div>
-			
-	</div> <!-- end content -->
+		<hr class="clr">
 	
-	<div class="push"></div>
-</div><!-- end wrapper-ht -->
-
-<a name="sitemap"></a>
-
-<div id="footer">
-	<div id="ftr-content">		
-		<div class="ftrcol">
+		<div class="ftrcol ftrcolFrst">
 			<h5>Sobre El Alcoholismo</h5>
 			<ul>
 				<li><a href="sobre-13-mitos.html">13 Mitos</a></li>
@@ -536,7 +539,6 @@
 		<div class="ftrcol">
 			<ul>
 				<li><h5><a href="comparte-tu-testimonio.html">Testimonios</a></h5></li>
-				<li><h5><a href="adicciones.html">Adicciones</a></h5></li>
 				<li><h5><a href="distribucion.html">Distribuci&#243;n</a></h5></li>
 				<li><h5><a href="contactenos.html">Cont&#225;ctenos</a></h5></li>
 				<li><h5><a href="index.html">Casa</a></h5></li>
@@ -558,7 +560,7 @@
 			<script language="JavaScript">document.write(include_copyright(2012));</script>
 		</div>
 	</div><!-- end footer content -->
-</div><!-- end footer -->
+</div><!-- end footer-mp -->
 		
 </body>
 </html>

@@ -2,6 +2,14 @@
 
 /*::::::::::::::: PAGE CONTAINER :::::::::::::::*/
 
+#wrapper-ht-mp { /* sets up properties for bottom fixed footer */
+	width: 100%;
+	min-height: 100%; /* ie6 hack */
+	height: auto !important; /* ie6 hack */
+	height: 100%;
+	margin: 0 auto -662px;
+}
+
 #wrapper-ht { /* sets up properties for bottom fixed footer */
 	width: 100%;
 	min-height: 100%; /* ie6 hack */
@@ -62,11 +70,18 @@
 
 /*::::::::::::::: PAGE CONTENT CONTAINERs :::::::::::::::*/
 
+#contentWrap {
+	background: url("../img/bg-content-rpt.jpg") bottom left repeat-x;
+}
 #content {
 	width: 1050px;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
+	#socialShare {
+		width: 300px;
+		margin: 0 auto;
+	}
 
 #ColL, #ColLWide {
 	position: relative;
@@ -80,40 +95,7 @@
 	}
 		.verses > h3 + p {
 			padding-top: 0;
-		}
-		
-		.cBx3 {
-			float: left;
-			width: 383px;
-			height: 250px;
-			padding: 15px;
-			background: #fff;
-			border-bottom: 22px solid #000;
-			/* -webkit-box-shadow: inset #a6a6a6 1px 2px 3px;
-			-moz-box-shadow: inset #a6a6a6 1px 2px 3px;
-			box-shadow: inset #a6a6a6 1px 2px 3px; */
-			behavior: url(/PIE.htc);
-		}
-		.cBx4 {
-			float: right;
-			width: 618px;
-			height: 250px;
-			padding: 15px 0;
-			background: url("../img/bookshelf.gif") center 200px no-repeat #fff;
-			border-bottom: 22px solid #000;
-			/* -webkit-box-shadow: inset #a6a6a6 1px 2px 3px;
-			-moz-box-shadow: inset #a6a6a6 1px 2px 3px;
-			box-shadow: inset #a6a6a6 1px 2px 3px;
-			behavior: url(/PIE.htc); */
-			text-align: center;
-		}
-			.cBx4 img {
-				margin-top: 38px;
-				margin-left: 20px;
-			}
-			.cBx4 img:first-child {
-				margin-left: 0;
-			}
+		}		
 	
 #ColR {
 	float: right;
@@ -166,23 +148,6 @@
 		box-shadow: inset #888 1px 2px 3px;
 		behavior: url(/PIE.htc);
 	}
-	/* .btnBlkBG {
-		display: block;
-		width: 328px;
-		height: 90px;
-		margin-bottom: 10px;
-		padding-top: 9px;		
-		-webkit-box-shadow: #777 1px 1px 2px;
-		-moz-box-shadow: #777 1px 1px 2px;
-		box-shadow: #777 1px 1px 2px;
-		border: 1px solid #fff;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-		border-radius: 6px;		
-		text-align: center;
-		behavior: url("PIE.htc");
-		background: #990500;
-	} */
 	
 /*::::::::::::::: TABLE :::::::::::::::*/	
 
@@ -197,14 +162,45 @@
 	
 /*::::::::::::::: FOOTER :::::::::::::::*/ 
 
+#footer-mp, .push-mp {
+	height: 662px;
+}
 
 #footer, .push {  /* sets up properties for bottom fixed footer */
 	height: 354px;
 }
-#footer { /* For footer link lists refer to lists-links.css */
+
+#footer, #footer-mp { /* For footer link lists refer to lists-links.css */
 	width: 100%;
-	background: url("../img/bg-ftr-rpt.gif") repeat-x #000;
+	background: url("../img/bg-ftr-rpt.jpg") repeat-x #000;
 }
+	.cBx3 {
+		float: left;
+		width: 383px;
+		height: 250px;
+		padding: 15px;
+		padding-left: 0;
+	}
+		.cBx3 p, .cBx4 p {
+			padding-top: 0;
+			font: normal 15px/21px 'myriad-pro', Arial, sans-serif !important;
+		}
+	.cBx4 {
+		float: right;
+		width: 618px;
+		height: 250px;
+		padding: 15px 0;
+		background: url("../img/bookshelf.png") center 175px no-repeat;
+		text-align: center;
+	}
+		.cBx4 img {
+			margin-top: 13px;
+			margin-left: 20px;
+		}
+		.cBx4 img:first-child {
+			margin-left: 0;
+		}
+		
 	#ftr-content { 
 		width: 1050px;
 		margin: 0 auto;
@@ -219,7 +215,7 @@
 		height: 294px;	
 		padding-left: 35px;
 	}
-		#ftr-content .ftrcol:first-child {
+		.ftrcolFrst {
 			padding-left: 0;
 		}
 	#contactNfo {
